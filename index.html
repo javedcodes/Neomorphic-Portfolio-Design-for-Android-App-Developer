@@ -232,11 +232,31 @@
     </section>
 
     <!-- contact section ends -->
+
+    <div class="credits"> By <span class="underline">Logan James</span></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <script>
+
+        var type = new Typed('.typing-text', {
+            strings: ['Android App Developer', 'Mobile UI Designer', 'Java Developer'],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed : 80,
+            backDelay : 1000
+            
+        });
+
+        let themeColor = document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color => color.addEventListener('click', () => {
+            let background = color.style.background;
+            document.querySelector('body').style.background = background;
+        }));
+
+    </script>
     
     <script src="script.js"></script>
-    <script>
-  
-    </script>
 
 </body>
 
